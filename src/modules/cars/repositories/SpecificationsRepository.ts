@@ -20,9 +20,11 @@ class SpecificationsRepository implements ISpecificationsRepository {
     });
     this.specifications.push(specification);
   }
+
   getAll(): Specification[] {
     return this.specifications;
   }
+
   findByName(name: string): Specification {
     return this.specifications.find(
       specification => specification.name === name
